@@ -1,0 +1,95 @@
+/*------------------Modules---------------*/
+#bureau-restreint{
+    padding-top: 15vh;
+}
+.module{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.module h2{
+    margin: 10vh 5vw;
+    text-align: center;
+}
+.members{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.member .photo{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    animation-name: float;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 20;
+}
+.member .name{
+    text-align: center;
+    animation-name: float;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.member:nth-child(1) .photo, .member:nth-child(1) .name{
+    animation-delay: 0s;
+}
+.member:nth-child(2) .photo, .member:nth-child(2) .name{
+    animation-delay: 4s;
+}
+.member:nth-child(3) .photo, .member:nth-child(3) .name{
+    animation-delay: 2s;
+}
+.member:nth-child(4) .photo, .member:nth-child(4) .name{
+    animation-delay: 7s;
+}
+.member:nth-child(5) .photo, .member:nth-child(5) .name{
+    animation-delay: 3s;
+}
+.member:nth-child(6) .photo, .member:nth-child(6) .name{
+    animation-delay: 9s;
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-5px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.member .pillar-group{
+    position: relative;
+    text-align: center;
+    z-index: 4;
+}
+.member .pillar{
+    height: 350px;
+    pointer-events: none;
+}
+.member .pillar-group .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.member .pillar-group .role{
+    transform: rotate(-90deg);
+}
+

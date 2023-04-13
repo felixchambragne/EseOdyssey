@@ -1,0 +1,78 @@
+/*------------------Planning---------------*/
+.planning{
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.planning h2{
+    margin: 10vh 5vw 0 5vw;
+    text-align: center;
+}
+.planning h3{
+    margin: 0 5vw 10vh 5vw;
+    text-align: center;
+}
+.days{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.day .name{
+    text-align: center;
+    animation-name: float;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.day:nth-child(1) .name{
+    animation-delay: 0s;
+}
+.day:nth-child(2) .name{
+    animation-delay: 4s;
+}
+.day:nth-child(3) .name{
+    animation-delay: 2s;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-5px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.day .ruin-group{
+    position: relative;
+    text-align: center;
+    z-index: 4;
+}
+.day .ruin{
+    height: 570px;
+    pointer-events: none;
+}
+.day .ruin-group .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+

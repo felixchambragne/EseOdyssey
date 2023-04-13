@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px) {
+    .pillar{
+        display: none;
+    }
+    .member .pillar-group .role {
+        transform: rotate(0deg);
+        background-color: var(--light-green);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .member .pillar-group .center{
+        margin-top: 20px;
+        position: relative;
+    }
+}

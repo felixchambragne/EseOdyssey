@@ -1,0 +1,27 @@
+/*----------------mobile---------------------*/
+@media only screen and (max-width: 768px) {
+    .waves-svg {
+        max-height: 10vh;
+    }
+    .card-mot{
+        margin: 0;
+        width: 90%;
+    }
+    .temple .pillar-group:hover .top{
+        transform: translate(-50%, -110%);
+    }
+    /*--------------clouds------------------*/
+    #top-page .objects #cloud1{
+        top: 10vh;
+        left: 0;
+    }
+    #top-page .objects #cloud2{
+        top: 10vh;
+        right: 0;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .temple{
+       width: 100%;
+    }
+}
